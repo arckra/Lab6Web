@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WebPort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-cyan">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fas fa-code me-2"></i>WebPort
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="artikel.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-white mb-4">Portfolio Saya 🎨</h1>
+                    <p class="lead text-light mb-4">Koleksi project dan karya terbaik yang telah saya selesaikan dengan berbagai teknologi dan pendekatan.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">
+                            Semua Project
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="web">
+                            <i class="fas fa-globe me-2"></i>Website
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="mobile">
+                            <i class="fas fa-mobile-alt me-2"></i>Mobile App
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="design">
+                            <i class="fas fa-palette me-2"></i>UI/UX Design
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Portfolio Grid -->
+        <div class="row" id="portfolioGrid">
+            <!-- Portfolio Item 1 - Website -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/0077b6/fff.png&text=E-Commerce+Website" 
+                             alt="E-Commerce Website" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-primary">Website</span>
+                        <h5>E-Commerce Platform</h5>
+                        <p>Platform e-commerce lengkap dengan payment gateway dan admin dashboard.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 - Mobile App -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mobile">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/28a745/fff.png&text=Fitness+Mobile+App" 
+                             alt="Fitness App" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-success">Mobile App</span>
+                        <h5>Fitness Tracker App</h5>
+                        <p>Aplikasi tracking olahraga dengan fitur social sharing dan progress analytics.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 - UI/UX Design -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="design">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/dc3545/fff.png&text=Banking+App+Design" 
+                             alt="Banking App Design" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-danger">UI/UX Design</span>
+                        <h5>Banking App Redesign</h5>
+                        <p>Redesign aplikasi mobile banking dengan fokus pada user experience.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 - Website -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/6f42c1/fff.png&text=Company+Profile" 
+                             alt="Company Profile" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-primary">Website</span>
+                        <h5>Corporate Website</h5>
+                        <p>Website perusahaan modern dengan CMS custom dan responsive design.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 - Mobile App -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mobile">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/fd7e14/fff.png&text=Food+Delivery+App" 
+                             alt="Food Delivery App" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-success">Mobile App</span>
+                        <h5>Food Delivery App</h5>
+                        <p>Aplikasi delivery makanan dengan real-time tracking dan multiple payment.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 - UI/UX Design -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="design">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/20c997/fff.png&text=Travel+App+Design" 
+                             alt="Travel App Design" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-danger">UI/UX Design</span>
+                        <h5>Travel Booking App</h5>
+                        <p>UI/UX design untuk aplikasi booking travel dengan itinerary planner.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Sketch</span>
+                            <span class="tech-tag">InVision</span>
+                            <span class="tech-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 7 - Website -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/e83e8c/fff.png&text=Blog+Platform" 
+                             alt="Blog Platform" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-primary">Website</span>
+                        <h5>Blog Platform</h5>
+                        <p>Platform blogging dengan rich text editor dan social media integration.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 8 - Mobile App -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mobile">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/6c757d/fff.png&text=Task+Manager+App" 
+                             alt="Task Manager App" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-success">Mobile App</span>
+                        <h5>Task Manager</h5>
+                        <p>Aplikasi manajemen tugas dengan collaboration features dan deadline reminder.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Room DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 9 - UI/UX Design -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="design">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://dummyimage.com/400x250/0dcaf0/fff.png&text=E-Learning+Design" 
+                             alt="E-Learning Design" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-icons">
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="portfolio-icon">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category badge bg-danger">UI/UX Design</span>
+                        <h5>E-Learning Platform</h5>
+                        <p>Design sistem pembelajaran online dengan interactive course materials.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">Prototype</span>
+                            <span class="tech-tag">User Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-code me-2"></i>WebPort</h5>
+                    <p class="mb-0">Membangun pengalaman digital yang luar biasa.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 WebPort. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Portfolio Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-filter]');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            console.log('Portfolio page loaded successfully!');
+        });
+    </script>
+</body>
+</html>
