@@ -254,3 +254,7 @@ Dosen Pengampu : Agung Nugroho, S.Kom., M.Kom.
 Outputnya yaitu :
 
 <img width="1375" height="914" alt="image" src="https://github.com/user-attachments/assets/443de256-21c7-4edb-8a5b-f7c5a9506b13" />
+
+
+
+<img width="770" height="555" alt="image" src="https://github.com/user-attachments/assets/cd425f00-6b13-407d-a167-403b21c04be0" />
